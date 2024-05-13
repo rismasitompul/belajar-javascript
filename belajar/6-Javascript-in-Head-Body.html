@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript in Head And Body</title>
+</head>
+
+    <!-- JS-in Head -->
+        <!-- <script>
+            function myFunction(){
+                document.getElementById("demo").innerHTML = "Paragraph Changed"
+            }
+        </script> -->
+
+
+    <!-- Kalau pakai eksternal JS didalam direktori yang sama  -->
+        <!-- <script src="script.js"></script>  -->
+
+<body>
+    
+    <p id="demo">Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it!</button>
+
+
+    <!-- JS-in Body -->
+    <script>
+        function myFunction(){
+            document.getElementById("demo").innerHTML = "Paragraph Changed"
+        }
+    </script>
+
+
+
+    <!-- Ekternal JS beda direktori -->
+        <!-- <script src="/js/myScript.js"></script> -->
+
+    <!-- Eksternal JS (URL) -->
+        <!-- <script src="https://www.w3schools.com/js/myScript.js"></script> -->
+</body>
+</html>
