@@ -184,12 +184,87 @@ cars[0] = "Ford";
     numbers.sort((a, b) => b - a);
     console.log(numbers);         // Output: [200, 40, 5, 1]
 
+===============================================================
+
+-- OBJECT--  [LIHAT Folder belajar / (14)]
+
+>> cara penulisan 
+
+const person = {
+  firstName: "Lentera",
+  lastName: "Cahaya",
+  age: 50,
+  eyeColor: "blue"
+};
+
+>> cara menampilkan nya 
+cara 1 :
+  objectName.propertyName
+
+cara 2 : 
+  objectName["propertyName"]
+----------
+
+>> tentang this keyword
+  -> this merujuk pada objek saat ini yang sedang di eksekusi 
+
+>> -- OBJEK METHODE --
+    diakses dengan cara :
+      objectName.methodName()
+
+===============================================================
+
+---- Javascript Event --- [LIHAT Folder belajar / (15)]
+  -> tindakan atau kejadian yang terjadi di dalam aplikasi web, seperti klik mouse, penekanan tombol keyboard, perubahan nilai dalam elemen HTML, atau proses pemuatan halaman. 
+
+  terdiri atas :
+    1. onchange
+    2. onclick
+    3. onmouseover
+    4. onmouseout
+    5. onkeydown
+    6. onload
+
+===============================================================
+-- JS STRING --[LIHAT Folder belajar / (16)]
+
+> lenght  -> menghitung jumlah elemen dalam sebuah array atau panjang dari sebuah string
+  text.lenght; 
 
 
+> string bisa mendefenisikan sebuah objek
+  let y = new String("Joni");
+
+> Cukup gunakan at()  untuk mengakses 2 karakter terakhir dari sebuah kata, sebelumnya memang bisa pakai myString.at(-2) ,atau sharAt(myString.lenght-2)
+
+  let str = "Roger";
+    console.log(str.at(-2));    //output : "e"
 
 
+---  JS STRING METHOD --- [LIHAT Folder belajar / (17)]
 
+  1. slice(start, end) -> Mengembalikan bagian dari string mulai dari start hingga akhir (end tidak termasuk). Jika start nya negatif atau kosong maka diambil karakter akhir string
+  2. substring(start, end) -> mirip dengan slice(), tetapi tidak mendukung indeks negatif.
+  3. substr(start, length) -> Mulai dari indeks start, ambil sejumlah karakter sebanyak length dari string. 
+  4. toLowerCase() : konversi ke huruf kecil
+  5. toUpperCase() : konversi ke huruf besar
+  6. concat() : Untuk menggabungkan dua atau lebih string
+  7. trim() : menghapus spasi kosong diawal dan akhir sebuah string
+  8. trimStart() : mengapus spasi hanya yang di depan
+  9. trimEnd() : mengapus spasi hanya yang di belakang
+  10. padStart() :mengisi string dengan karakter tertentu hingga mencapai panjang yang ditentukan di depan
+  11. padEnd() :mengisi string dengan karakter tertentu hingga mencapai panjang yang ditentukan di belakang
+  12. repeat() : membuat atau mengembalikan string baru yang berisi pengulangan string asli sebanyak yang ditentukan 
+  13. replace() : digunakan untuk mengganti kecocokan pertama dari sebuah pola dengan string pengganti tertentu. Namun, untuk mengganti semua kecocokan dalam string, Anda perlu menggunakan ekspresi reguler dengan flag /g (pencocokan global)
+  14. /g : Ini akan menyebabkan pencarian semua kecocokan dalam string, bukan hanya kecocokan pertama.
+  15. replaceAll() : memungkinkan penggantian semua kecocokan dari sebuah pola dalam sebuah string. tanpa harus menggunakan flag '/g', TAPI ini hanya tersedia mulai dariECMAScript 2021 (ES12) dan seterusnya
+        pola : string.replaceAll(pola, pengganti)
 
+<!-- convert string ke Array -->
+  16. split() : membagi string menjadi Array , berguna ketika memisahkan string berdasarkan spasi,koma
+    > text.split(" , ")
+    > text.split(" ")
+    > text.split("|")
 
 
 

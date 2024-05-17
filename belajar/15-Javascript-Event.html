@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Event</title>
+</head>
+<body>
+    
+    <H1>hELLO</H1>
+
+    <!-- pAKAI paragraf dengan id demo -->
+        <!-- <button onclick="document.getElementById('demo').innerHTML=Date()">The This Time</button>
+        <p id="demo"></p> -->
+
+    <!-- tanpa paragraf -->
+        <!-- <button onclick="this.innerHTML=Date()">The time is</button> -->
+
+    <!-- CARA LAIN -->
+    <button onclick="displayDate()">The Time is </button>
+        <p id="demo"></p>
+    <script>
+        function displayDate () {
+            document.getElementById("demo").innerHTML=Date();
+        }
+    </script>
+
+
+</body>
+</html>

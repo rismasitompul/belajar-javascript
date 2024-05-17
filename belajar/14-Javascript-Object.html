@@ -11,15 +11,39 @@
 
     <script>
         // Create an object
-        const person = {
-            firstName: "Sarah", 
-            eyeColor: "brown",
-            age:50,
-        }
+            // const person = {
+            //     firstName: "Sarah", 
+            //     eyeColor: "brown",
+            //     age:50,
+            // }
 
         // Display some data from the object 
 
-        document.getElementById("demo").innerHTML= person.age + "years old" ;
+        //  document.getElementById("demo").innerHTML= person.age + "years old" ;
+
+        
+        // ------------------------------------------------------
+
+            // const person = {
+            //     firstName : "Lentera",
+            //     lastName : "Cahaya",
+            //     id : 32832
+            // };
+
+
+            // document.getElementById("demo").innerHTML = person["firstName"]+ " " + person[lastName];
+
+        // ------ OBJECT METHOD------------------------------------------------
+                const person = {
+                firstName : "Lentera",
+                lastName : "Cahaya",
+                id : 32832,
+                fullName : function() {
+                    return this.firstName + " " + this.lastName;
+                }
+            };
+
+            document.getElementById("demo").innerHTML=person.fullName();
     </script>
 
 </body>

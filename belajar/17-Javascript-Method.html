@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS METHOD</title>
+</head>
+<body>
+
+<!-- PARAGRAF -->
+    <p id="demo"></p>
+
+   <script>
+       
+
+// charAt()
+        // let text = "Hello World";
+        //  document.getElementById("demo").innerHTML= text.charAt(0);
+        // Output  : H
+
+// charCodeAt()
+        // document.getElementById("demo").innerHTML = text.charCodeAt(0);
+
+// at()
+    // const name = "Roger";
+    // let.letter = name.at(2);  atau pakai  // let letter = name[2];
+
+
+    // document.getElementById("demo").innerHTML = letter;
+        // output : g
+
+//=================================================    ==============  
+//Sekarang cukup gunakan at() untuk mengakses 2 karakter terakhir dari sebuah kata
+// sebelumnya memang bisa pakai myString.at(-2)
+// atau sharAt(myString.lenght-2)
+
+// sekarang cukup gunakan metode at()
+
+
+    // let str = "Roger";
+    // console.log(str.at(-2)); //output : "e"
+
+
+//=================================================    ==============  
+// String Method
+
+// 1. slice method
+    // let text = "Apple, Banana, Kiwi";
+    // let part = text.slice (7,13);
+
+    // document.getElementById("demo").innerHTML = part;
+        // output : Banana
+
+// 2. substring method
+    // sama dengan slice tapi tidak mendukung indeks negatif
+
+
+//  3. substr method
+    let str = "Apple, Banana, Kiwi";
+    document.getElementById("demo").innerHTML = str.substr(7,6);
+    // Output : Banana
+
+
+
+   </script>
+
+
+
+
+
+    
+</body>
+</html>
