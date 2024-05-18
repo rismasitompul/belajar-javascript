@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Template String</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+
+
+    <!-- pakai back-tics -->
+    <!-- <script>
+        let firstName = "John";
+        let lastName = " Cena";
+
+        let text = `Welcome ${firstName} ${lastName}`;
+
+        document.getElementById("demo").innerHTML = text;
+    </script> -->
+    
+
+    <!-- manipulasi html -->
+    <script>
+        let header = "Template String";
+        let tags = ["template strings", "Javascript", "ES6"];
+
+        let html = `<h2>${header}</h2>`;
+
+        for (const x of tags) {
+            html += `<li>${x}</li>`;
+        }
+
+        html +=`</ul>`;
+
+        document.getElementById("demo").innerHTML = html;
+    </script>
+</body>
+</html>

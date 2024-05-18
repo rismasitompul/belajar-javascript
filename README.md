@@ -266,10 +266,47 @@ cara 2 :
     > text.split(" ")
     > text.split("|")
 
+-----------------------------------------------------
+>> STRING SEARCH METHODS
+
+ 1. indexOf()  -> mencari indeks dari awal string dari suatu substring yang diberikan, jika substring tidak ditemukan metode ini mengembalikan -1.
+ 2. lastIndexOf()  -> mencari substring dari akhir string ke awal
+ 3. search() -> mencari teks yang coock dengan ekspresi regular dalam string , jika tidak ditemukan mengembalikan nilai -1
+ 4. match() -> mencocokan string dengan ekspresi regular tertentu, mengembalikan array dari semua hasil pencocokan atau null jika tidak ada pencocokan 
+ 5. matchAll() -> mengembalikan iterator dari semua hasil pencocokan dalam string termasuk informasi tambahan 
+ 6. includes()  -> untuk mengeck apakah string mengandung substring tertentu , mengembalikan nilai boolean
+ 7. startWith()  -> memeriksa apakah string dimulai dengan substtrinmg tertentu, mengembalikan nilai boolean
+ 8. endsWith() -> memeriksa apakah string diakhiri dengan substring tertentu , mengembalikan nilai boolean
 
 
+--------------------------------------------------------
+>> JS Template String
+ 1. back-tics syntax  (``) : di keyboard kiri atas dibawah esc
+    ->> Aman digunakan walaupun ada petik 2 ("") atau petik 1 ( '') didalamnya
+ 2. interpolation  : 
+      ${...}
 
+----------------------------------------------------------
+>> JS Number
+  1. Number.isInteger()  : memeriksa apakah suatu bilangan bulat atau bukan , mengembalikan nilai true atau false
+  2. Number.isSafeInteger() : memeriksa apakah bilangan bulat yang aman atau tidak
+  3. Number.parseFloat() : mengkonversi sebuah string menjadi float atau desimal
+4. Number.parseInt()  : mengonversi sebuah string menjadi tipe data integer (bilangan bulat).
+  --------------
 
+  mehod number 
+  ----------- 
+  1. toString() -> mengonversi sebuah angka menjadi string.
+  2. toEksponential()  -> mengonversi angka menjadi notasi eksponensial.
+  3. toFixed()  -> mengonversi angka menjadi string dengan jumlah digit desimal tertentu.
+  4. toPrecision()  -> mengonversi angka menjadi string dengan panjang tertentu, termasuk digit sebelum dan sesudah titik desimal.
+  5. valueOf()  -> mengembalikan nilai dasar dari objek Number, yaitu angka itu sendiri.
 
+    > convert variabel ke number
+    1. Number()  -> mengubah variabel atau argumenya ke number
+    2. parseFloat()  -> mengkonversi argumen menjadi float / decimal
+    3. parseInt()  -> konversi argumen menjadi tipe data integer atau bilangan bulat
+
+--------------------------------------------------------------
 
 
